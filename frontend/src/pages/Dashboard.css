@@ -1,0 +1,161 @@
+/* .dashboard {
+  padding: 45px 45px;
+}
+
+.welcome p {
+  color: #bd5b3c;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.welcome h1 {
+  margin: 0;
+  font-size: 42px;
+  color: #222;
+}
+
+.welcome span {
+  display: block;
+  margin-top: 12px;
+  font-size: 20px;
+  color: #777;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.dashboard-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 22px;
+  padding: 30px;
+  min-height: 190px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-card p {
+  margin: 25px 0 8px;
+  color: #777;
+  font-size: 17px;
+}
+
+.dashboard-card h2 {
+  margin: 0;
+  font-size: 36px;
+  color: #222;
+}
+
+.card-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.orange {
+  background: #f9e4dc;
+}
+
+.yellow {
+  background: #fff0d5;
+}
+
+.green {
+  background: #e5f2d8;
+}
+
+.red {
+  background: #f8dddd;
+} */
+
+
+.dashboard {
+  padding: 42px;
+}
+
+.welcome p {
+  color: #c95d38;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.welcome h1 {
+  font-size: 42px;
+  margin: 0;
+  color: #222;
+}
+
+.welcome span {
+  display: block;
+  margin-top: 12px;
+  color: #777;
+  font-size: 19px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-top: 45px;
+}
+
+.dashboard-card {
+  background: white;
+  border: 1px solid #eee7e1;
+  border-radius: 22px;
+  padding: 32px;
+  min-height: 190px;
+  box-sizing: border-box;
+}
+
+.card-icon {
+  width: 62px;
+  height: 62px;
+  background: #f8e9e2;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  margin-bottom: 28px;
+}
+
+.dashboard-card p {
+  margin: 0;
+  color: #777;
+  font-size: 17px;
+}
+
+.dashboard-card h2 {
+  margin: 8px 0 0;
+  font-size: 35px;
+  color: #222;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}

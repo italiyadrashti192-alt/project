@@ -1,0 +1,473 @@
+.ai-page {
+  padding: 32px;
+  min-height: calc(100vh - 70px);
+  background: #f8f7f5;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.ai-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.page-label {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.ai-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #222;
+}
+
+.ai-header p:last-child {
+  margin-top: 8px;
+  color: #777;
+  font-size: 15px;
+}
+
+.ai-refresh-btn {
+  border: none;
+  background: #222;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ai-refresh-btn:hover {
+  opacity: 0.85;
+}
+
+/* =========================
+   SUMMARY CARDS
+========================= */
+
+.ai-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.ai-summary-card {
+  background: white;
+  border: 1px solid #e8e5e0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.summary-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #f3f1ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.ai-summary-card span {
+  color: #777;
+  font-size: 13px;
+}
+
+.ai-summary-card h2 {
+  margin: 5px 0 0;
+  font-size: 25px;
+  color: #222;
+}
+
+/* =========================
+   MESSAGE
+========================= */
+
+.ai-message {
+  background: #fff3cd;
+  border: 1px solid #ffe69c;
+  color: #856404;
+  padding: 13px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   AI INSIGHTS
+========================= */
+
+.ai-insights-section {
+  background: white;
+  border: 1px solid #e8e5e0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 28px;
+}
+
+.ai-insights-header {
+  margin-bottom: 20px;
+}
+
+.ai-insights-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #222;
+}
+
+.ai-insights-header p:last-child {
+  margin: 6px 0 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.ai-insights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* =========================
+   INSIGHT CARDS
+========================= */
+
+.ai-insight-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e8e5e0;
+  background: #faf9f7;
+}
+
+.insight-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  background: #f3f1ed;
+}
+
+.insight-content {
+  flex: 1;
+}
+
+.insight-content h3 {
+  margin: 0 0 7px;
+  font-size: 16px;
+  color: #222;
+}
+
+.insight-content p {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================
+   INSIGHT TYPES
+========================= */
+
+.warning-insight {
+  border-left: 4px solid #f0b429;
+}
+
+.warning-insight .insight-icon {
+  background: #fff3cd;
+}
+
+.danger-insight {
+  border-left: 4px solid #e05252;
+}
+
+.danger-insight .insight-icon {
+  background: #fdecec;
+}
+
+.purchase-insight {
+  border-left: 4px solid #5b8def;
+}
+
+.purchase-insight .insight-icon {
+  background: #edf3ff;
+}
+
+.information-insight {
+  border-left: 4px solid #8b6fd8;
+}
+
+.information-insight .insight-icon {
+  background: #f1edff;
+}
+
+/* =========================
+   INSIGHT INGREDIENT TAGS
+========================= */
+
+.insight-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.insight-items span {
+  display: inline-block;
+  background: white;
+  border: 1px solid #ddd8d0;
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+}
+
+.usage-text {
+  margin-top: 8px !important;
+}
+
+/* =========================
+   INVENTORY TABLE
+========================= */
+
+.ai-table-container {
+  background: white;
+  border: 1px solid #e8e5e0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ai-table-header {
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.ai-table-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.ai-table-header p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 13px;
+}
+
+.analysis-count {
+  background: #f3f1ed;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.ai-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.ai-table th {
+  text-align: left;
+  padding: 15px 20px;
+  background: #faf9f7;
+  color: #666;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ai-table td {
+  padding: 18px 20px;
+  border-top: 1px solid #eee;
+  color: #444;
+  font-size: 14px;
+}
+
+.ai-table tbody tr:hover {
+  background: #faf9f7;
+}
+
+.ingredient-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ingredient-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #f3f1ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   STATUS BADGES
+========================= */
+
+.status-badge,
+.demand-badge {
+  display: inline-block;
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.normal-stock {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.low-stock {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.high-demand {
+  background: #fdecec;
+  color: #c62828;
+}
+
+.medium-demand {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.low-demand {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.no-demand {
+  background: #f0f0f0;
+  color: #777;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.ai-loading {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ai-loading-icon {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.ai-loading h2 {
+  margin: 0;
+}
+
+.ai-loading p {
+  color: #777;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.ai-empty {
+  background: white;
+  border: 1px solid #e8e5e0;
+  border-radius: 12px;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.ai-empty div {
+  font-size: 55px;
+}
+
+.ai-empty h2 {
+  margin-bottom: 8px;
+}
+
+.ai-empty p {
+  color: #777;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .ai-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ai-insights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .ai-page {
+    padding: 20px;
+  }
+
+  .ai-header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .ai-header h1 {
+    font-size: 26px;
+  }
+
+  .ai-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-insights-section {
+    padding: 18px;
+  }
+
+  .ai-insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-insight-card {
+    padding: 16px;
+  }
+}

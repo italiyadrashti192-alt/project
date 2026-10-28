@@ -1,0 +1,255 @@
+.kitchen-page {
+  padding: 32px;
+  min-height: calc(100vh - 70px);
+}
+
+.kitchen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.page-label {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.kitchen-header h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #222;
+}
+
+.kitchen-header p {
+  margin-top: 8px;
+  color: #777;
+}
+
+.refresh-btn {
+  border: none;
+  padding: 11px 18px;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.refresh-btn:hover {
+  opacity: 0.85;
+}
+
+.kitchen-message {
+  padding: 13px 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.kitchen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.kitchen-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.kitchen-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.order-label,
+.food-label {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.kitchen-card-top h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.status-badge {
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.preparing {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-badge.ready {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.food-section {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 22px;
+}
+
+.food-icon {
+  font-size: 35px;
+}
+
+.food-section h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.order-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.order-details div {
+  padding: 13px;
+  background: #f8f8f8;
+  border-radius: 9px;
+}
+
+.order-details span {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.order-details strong {
+  font-size: 16px;
+}
+
+.ingredients-section {
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+}
+
+.ingredients-section h4 {
+  margin: 0 0 12px;
+  font-size: 14px;
+}
+
+.ingredient-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.ingredient-row:last-child {
+  border-bottom: none;
+}
+
+.ingredient-row strong {
+  color: #555;
+}
+
+.kitchen-actions {
+  margin-top: 20px;
+}
+
+.kitchen-actions button {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.start-btn {
+  background: #222;
+  color: white;
+}
+
+.ready-btn {
+  background: #15803d;
+  color: white;
+}
+
+.start-btn:hover,
+.ready-btn:hover {
+  opacity: 0.88;
+}
+
+.ready-text {
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: #dcfce7;
+  color: #15803d;
+  font-weight: 700;
+}
+
+.empty-kitchen {
+  background: white;
+  border: 1px solid #e7e7e7;
+  border-radius: 14px;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.empty-kitchen div {
+  font-size: 50px;
+}
+
+.empty-kitchen h2 {
+  margin: 12px 0 5px;
+}
+
+.empty-kitchen p {
+  color: #888;
+}
+
+@media (max-width: 1100px) {
+  .kitchen-grid {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .kitchen-page {
+    padding: 20px;
+  }
+
+  .kitchen-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .kitchen-grid {
+    grid-template-columns: 1fr;
+  }
+}
